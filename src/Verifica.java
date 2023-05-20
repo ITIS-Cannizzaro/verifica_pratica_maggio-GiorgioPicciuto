@@ -36,7 +36,7 @@ public class Verifica extends JFrame {
         JButton sortButton = new JButton("Visualizza in ordine crescente");
         public void actionPerformed(ActionEvent e) {
                 ArrayList<Integer> sortedNumbers = new ArrayList<>(numbers);
-                Collections.sort(sortedNumbers);
+                Collections.sort(sortedNumbers);/* È necessario spostare la definizione di actionPerformed all'esterno di sortButto*/
                 showNumbersDialog("Numeri in ordine crescente:", sortedNumbers);
             }
 
